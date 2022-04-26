@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon ./app.js",
+    "build": "sequelize db:migrate",
     "seed": "cross-env DB_ENABLE_LOGGING=true node './seed'"
   },
   "keywords": [],
@@ -24,8 +25,10 @@
     "express-validator": "^6.14.0",
     "http-errors": "^2.0.0",
     "morgan": "^1.10.0",
+    "pg": "^8.7.3",
     "promise.prototype.finally": "^3.1.2",
     "sequelize": "^6.17.0",
+    "sequelize-auto-migrations-v2": "^1.2.1",
     "sqlite3": "^5.0.0"
   }
 }
